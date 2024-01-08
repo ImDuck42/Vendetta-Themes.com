@@ -35,3 +35,8 @@ copyButton.addEventListener("click", function () {
     var textToCopy = "Hello, this text will be copied to clipboard !";
     copyTextToClipboard(textToCopy);
 });
+
+// Navigate to a URL
+function navigateTo(url) {
+    window.location.href = url;
+}
