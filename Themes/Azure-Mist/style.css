@@ -89,9 +89,7 @@ nav {
 
 /* animate child elements when hovered */
 #photo-container > *:hover {
-    background-color: #b578fcbb;
-    backdrop-filter: blur(0.05px);
-    transform: scale(1.1);
+    transform: scale(1.05);
     cursor: pointer;
 }
 
