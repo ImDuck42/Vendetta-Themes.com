@@ -1,0 +1,74 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+
+body {
+    background-image: url("https://raw.githubusercontent.com/ImDuck42/Vendetta-Themes.com/main/Assets/Pictures/Retro.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Segoe UI";
+    font-size: 20px;
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Header {
+    text-align: center;
+    width: 100%;
+    padding: 0px 20px;
+    border-radius: 10px;
+
+    background-color: #b578fc55;
+    backdrop-filter: blur(1px);
+}
+
+#Media {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: right;
+    margin: 0 0 0 10px;
+}
+
+/* style all child elements of #Media */
+#Media > * {
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 5px;
+
+    background-color: #b578fc33;
+    object-fit: contain;
+    object-position: center;
+
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.5), background-color 0.2s ease-in-out;
+}
+
+/* animate child elements when hovered */
+#Media > *:hover {
+    background-color: #b578fc66;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#footer {
+    background-color: #b578fc55;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+    position: fixed;
+    left: 3px;
+    bottom: 3px;
+    right: 3px;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+}
