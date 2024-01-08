@@ -59,6 +59,41 @@ nav {
     cursor: pointer;
 }
 
+#photo-container {
+    margin: 20px 2%;
+    padding: 15px;
+    border-radius: 15px;
+    width: 94%;
+    background-color: #00000000;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* style all child elements of #photo-container */
+#photo-container > * {
+    border-radius: 20px;
+    margin: 5px 12px;
+    width: 30vh; /* Width adjusted for 9:16 aspect ratio */
+    height: calc(30vh * 16 / 9); /* Height calculated for 9:16 aspect ratio */
+
+    background-color: #00000099;
+    backdrop-filter: blur(5px);
+    object-fit: fill;
+    object-position: center;
+
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.5), background-color 0.2s ease-in-out;
+}
+
+/* animate child elements when hovered */
+#photo-container > *:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
 #footer {
     background-color: #b578fc55;
     color: #fff;
